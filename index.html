@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fullpage.css">
+
+    <!-- 아이콘 -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+
+<body>
+    <!-- 제이쿼리를 사용하기위해 가져온 cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- fullpage js -->
+    <script src="./js/fullpage.js"></script>
+
+    <!-- 해당 섹션으로 가는 버튼 메뉴 -->
+    <ul id="menu">
+        <li data-menuanchor="s0">
+            <a href="#s0"></a>
+            <span class="section_name">MAIN</span>
+        </li>
+        <li data-menuanchor="s1">
+            <a href="#s1"></a>
+            <span class="section_name">ABOUT ME</span>
+        </li>
+        <li data-menuanchor="s2">
+            <a href="#s2"></a>
+            <span class="section_name">CONTENTS</span>
+        </li>
+        <li data-menuanchor="s3">
+            <a href="#s3"></a>
+            <span class="section_name">PORFOLIO - 01</span>
+        </li>
+        <li data-menuanchor="s4">
+            <a href="#s4"></a>
+            <span class="section_name">PORFOLIO - 02</span>
+        </li>
+        <li data-menuanchor="s5">
+            <a href="#s5"></a>
+            <span class="section_name">PORFOLIO - 03</span>
+        </li>
+        <li data-menuanchor="s6">
+            <a href="#s6"></a>
+            <span class="section_name">PORFOLIO - 04</span>
+        </li>
+        <li data-menuanchor="s7">
+            <a href="#s7"></a>
+            <span class="section_name">CONTACT</span>
+        </li>
+    </ul>
+
+    <script>
+        $('.section_name').hide()
+        $('#menu>li').mouseenter(function () {
+            $(this).children('.section_name').fadeIn(200);
+        });
+        $('#menu>li').mouseleave(function () {
+            $(this).children('.section_name').fadeOut(100);
+        });
+
+    </script>
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="sec0_inner">
+                <div class="maintxt">
+                    <h1>PORTFOLIO</h1>
+                    <p>by. <span>현수지</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------- 섹션 1 - About me -------------------->
+        <div class="section" id="section1">
+            <div class="inner sec1_inner">
+                <h2>ABOUT ME</h2>
+                <div class="sec1_wrapper">
+                    <div class="about">
+                        <p>PROFILE</p>
+                        <img src="./img/id-picture.jpg" alt="증명사진">
+                        <ul>
+                            <li><span>NAME</span> 현수지 / Hyun Sooji</li>
+                            <li><span>BIRTH</span> 1994.04.12</li>
+                            <li><span>PHONE</span> 010.3869.3596</li>
+                            <li><span>E.MAIL</span> hyunsj94@naver.com</li>
+                        </ul>
+                    </div>
+                    <ul class="resume">
+                        <li>
+                            <h3>EDUCATION</h3>
+                            <ul class="resume_wrap">
+                                <li>
+                                    <p>청명고등학교 졸업</p>
+                                    <span>2013.02</span>
+                                </li>
+                                <li>
+                                    <p>주얼리디자인과 졸업</p>
+                                    <span>2015.02</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>EXPERIENCE</h3>
+                            <ul class="resume_wrap">
+                                <li>
+                                    <p>KR주얼리</p>
+                                    <span>2015. 06 ~ 2016. 02 (8개월)</span>
+                                </li>
+                                <li>
+                                    <p>(주)신라주얼리</p>
+                                    <span>2021. 05 ~ 2022. 02 (9개월)</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="license">
+                            <h3>LICENSE</h3>
+                            <ul class="resume_wrap">
+                                <li>
+                                    <p>GTQ일러스트 2급</p>
+                                    <span>2014</span>
+                                </li>
+                                <li>
+                                    <p>GTQ그래픽기술자격 1급</p>
+                                    <span>2014</span>
+                                </li>
+                                <li>
+                                    <p>컴퓨터그래픽스운용기능사</p>
+                                    <span>2018</span>
+                                </li>
+                                <li>
+                                    <p>컴퓨터활용능력 2급</p>
+                                    <span>2019</span>
+                                </li>
+                                <li>
+                                    <p>웹디자인기능사</p>
+                                    <span>2022</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skill">
+                            <h3>SKILLS</h3>
+                            <ul>
+                                <li>
+                                    <i class="xi-photoshop"></i>
+                                </li>
+                                <li>
+                                    <i class="xi-illustrator"></i>
+                                </li>
+                                <li>
+                                    <i class="xi-html5"></i>
+                                </li>
+                                <li>
+                                    <i class="xi-css3"></i>
+                                </li>
+                                <li>
+                                    <i class="xi-javascript"></i>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------- contents -------------------->
+        <div class="section" id="contents">
+            <div class="inner content_inner">
+                <h2>CONTENTS</h2>
+                <ul class="contents_wrap">
+                    <li class="con_box">
+                        <h3>01</h3>
+                        <div class="box">
+                            <img src="./img/contents-1.png" alt="세라믹웹페이지">
+                            <div class="txtarea">
+                                <p>Ceramic</p>
+                                <span>반응형 웹페이지</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="con_box">
+                        <h3>02</h3>
+                        <div class="box">
+                            <img src="./img/contents-2.png" alt="샐러드웹페이지">
+                            <div class="txtarea">
+                                <p>SALAD</p>
+                                <span>PC 웹페이지</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="con_box">
+                        <h3>03</h3>
+                        <div class="box">
+                            <img src="./img/contents-3.png" alt="유튜브뮤직랜딩페이지">
+                            <div class="txtarea">
+                                <p>YouTube</p>
+                                <span>반응형 랜딩페이지 리뉴얼</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="con_box">
+                        <h3>04</h3>
+                        <div class="box">
+                            <img src="./img/contents-4.png" alt="와플샵웹페이지">
+                            <div class="txtarea">
+                                <p>Waffle Shop</p>
+                                <span>PC 웹페이지 리뉴얼</span>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-------------------- Portfolio 01 -------------------->
+        <div class="section portfolio" id="portfolio1">
+            <div class="inner pf_inner">
+                <h4>01</h4>
+                <div class="pf_wrap">
+                    <div class="left_txt">
+                        <div class="logo"><img style="width: 230px;" src="./img/logo-grey_color.png" alt="세라믹로고"></div>
+                        <p>
+                            도자기를 주제로 한 제작 웹페이지이며 <br>
+                            반응형으로 제작하였습니다.
+                        </p>
+                        <ul>
+                            <li>- 텍스트를 이용해 로고 제작</li>
+                            <li>- 포토샵으로 아이콘 제작</li>
+                        </ul>
+                        <div class="button btn1">
+                            <a href="./portfolio1/index.html" target="_blank"><i
+                                    class="xi-angle-right"></i><span>website 바로가기</span></a>
+
+                        </div>
+                    </div>
+                    <div class="right_img">
+                        <img src="./img/potfolio-01.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------- Portfolio 02 -------------------->
+        <div class="section portfolio" id="portfolio2">
+            <div class="inner pf_inner">
+                <h4>02</h4>
+                <div class="pf_wrap">
+                    <div class="left_txt">
+                        <div class="logo"><img style="width: 180px;" src="./img/salad-logo.JPG" alt="샐러드로고"></div>
+                        <p>
+                            샐러드, 샌드위치, 간식 등 건강한 식습관을 주제로 한 <br>
+                            제작 웹페이지이며 PC 버전으로 제작하였습니다.
+                        </p>
+                        <ul>
+                            <li>- 텍스트와 포토샵을 이용하여 로고 제작</li>
+                            <li>- Swiper를 이용하여 슬라이드 구현</li>
+                            <li></li>
+                        </ul>
+                        <div class="button btn2">
+                            <a href="./portfolio2/index.html" target="_blank"><i
+                                    class="xi-angle-right"></i><span>website 바로가기</span></a>
+                        </div>
+                    </div>
+                    <div class="right_img">
+                        <img src="./img/potfolio-02.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------- Portfolio 03 -------------------->
+        <div class="section portfolio" id="portfolio3">
+            <div class="inner pf_inner" style="z-index: 10;">
+                <h4>03</h4>
+                <div class="pf_wrap">
+                    <div class="left_txt" style="color: #fafafa;">
+                        <div class="logo"><img style="width: 300px;" src="./img/youtube_music.png" alt="유튜브뮤직로고"></div>
+                        <p>
+                            유튜브 뮤직 사이트의 메인 페이지를 <br>
+                            반응형 구조로 리뉴얼하였습니다.
+                        </p>
+                        <ul>
+                            <li>- 애니메이션 효과를 이용</li>
+                            <li>- 포토샵으로 곡선을 이용하여 배경이미지 제작</li>
+                        </ul>
+                        <div class="button btn3">
+                            <a href="./portfolio3/index.html" target="_blank"><i
+                                    class="xi-angle-right"></i><span>website 바로가기</span></a>
+                        </div>
+                    </div>
+                    <div class="right_img">
+                        <img src="./img/potfolio-03.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 블랙배경 -->
+            <div class="black_bg" style="width: 100%;
+            height: 100%; position: absolute; top: 0; left: 0;background: rgba(0, 0, 0, 0.548);"></div>
+        </div>
+
+        <!-------------------- Portfolio 04 -------------------->
+        <div class="section portfolio" id="portfolio4">
+            <div class="inner pf_inner">
+                <h4>04</h4>
+                <div class="pf_wrap">
+                    <div class="left_txt">
+                        <div class="logo"><img style="width: 130px;" src="./img/waffleshop-logo.png" alt="와플샵로고"></div>
+                        <p>
+                            와플샵 사이트의 메인페이지를 <br>
+                            pc 버전으로 리뉴얼하였습니다.
+                        </p>
+                        <ul>
+                            <li>- 와플 메뉴 영역에 가로스크롤 효과 구현</li>
+                        </ul>
+                        <div class="button btn4">
+                            <a href="./portfolio4/index.html" target="_blank"><i
+                                    class="xi-angle-right"></i><span>website 바로가기</span></a>
+                        </div>
+                    </div>
+                    <div class="right_img">
+                        <img src="./img/potfolio-04.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------- Contact -------------------->
+        <div class="section" id="contact">
+            <div class="inner contact_inner">
+                <div class="cont_txt">
+                    <h5>THANK YOU <br> FOR WATCHING</h5>
+                    <p>끝까지 봐주셔서 감사합니다.</p>
+                </div>
+                <ul class="contact_info">
+                    <li>CONTACT</li>
+                    <li>
+                        <p>PHONE</p>
+                        <span>010.3869.3596</span>
+                    </li>
+                    <li>
+                        <p>E-MAIL</p>
+                        <span>hyunsj94@naver.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#e8f0f4', '#fafafa', '#fafafa', '#fffff', '#fffff', '#fffff', '#fffff', '#f8f8f8'],
+            anchors: ['s0', 's1', 's2', 's3', 's4', 's5', 's6', 's7'],
+            menu: '#menu',
+        });
+    </script>
+</body>
+
+</html>
